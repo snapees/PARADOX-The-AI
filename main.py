@@ -11,7 +11,7 @@ import os
 
 recongizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "8caa8d9bee8f467d806ca16d047effbe"
+newsapi = <YOUR_API_KEY>
 
 def speak_old(text):
   engine.say(text)
@@ -38,7 +38,7 @@ def speak(text):
     os.remove("temp.mp3") 
 
 def aiProcess(command):
-  genai.configure(api_key="AIzaSyCL9bYuCTUK_T4DrgkolILkIb50L51Tx94")
+  genai.configure(api_key=<YOUR_API_KEY>)
   generation_config = {
     "temperature": 1,
     "top_p": 0.95,
